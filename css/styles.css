@@ -288,8 +288,9 @@ section {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.mobile-menu-contacts {
+.mobile-contacts {
   margin-bottom: 48px;
+  font-style: normal;
 }
 
 .mobile-menu-contacts-item:not(:last-child) {
@@ -358,6 +359,7 @@ section {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
 }
 
 @media (min-resolution: 192dpi) {
@@ -372,6 +374,7 @@ section {
 
 @media only screen and (min-width: 768px) {
   .section-hero {
+    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -392,6 +395,7 @@ section {
 
 @media only screen and (min-width: 1158px) {
   .section-hero {
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -573,15 +577,8 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
-  .teams {
-    padding-right: 108px;
-    padding-left: 108px;
-  }
-}
-@media only screen and (min-width: 768px) {
   .container.teams-conteiner {
-    padding: 0 0;
-    max-width: 552px;
+    max-width: 584px;
   }
 }
 
@@ -591,7 +588,8 @@ section {
     padding-left: 0;
   }
   .container.teams-conteiner {
-    max-width: 1128px;
+    max-width: 1158px;
+    /* padding: 0 0; */
   }
 }
 
@@ -728,9 +726,14 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 24px;
+    row-gap: 72px;
   }
 }
-
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+  }
+}
 .portfolio-name {
   font-weight: 500;
   font-size: 20px;
@@ -802,8 +805,8 @@ section {
 @media only screen and (min-width: 1158px) {
   .footer-container {
     align-items: baseline;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     column-gap: 0;
     row-gap: 0;
   }
@@ -826,7 +829,7 @@ section {
 }
 
 .page-footer {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
@@ -1005,6 +1008,7 @@ section {
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
